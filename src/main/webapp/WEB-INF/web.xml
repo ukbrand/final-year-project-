@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+         xmlns="https://jakarta.ee/xml/ns/jakartaee" 
+         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd" 
+         id="WebApp_ID" 
+         version="5.0">
+
+    <display-name>cold</display-name>
+
+    <welcome-file-list>
+        <welcome-file>index.html</welcome-file>
+        <welcome-file>index.jsp</welcome-file>
+        <welcome-file>index.htm</welcome-file>
+        <welcome-file>default.html</welcome-file>
+        <welcome-file>default.jsp</welcome-file>
+        <welcome-file>default.htm</welcome-file>
+    </welcome-file-list>
+
+    <!-- Servlet configurations -->
+    <servlet>
+        <servlet-name>FormServlet</servlet-name>
+        <servlet-class>com.nt.login</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>FormServlet</servlet-name>
+        <url-pattern>/a</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>create</servlet-name>
+        <servlet-class>com.nt.createAc</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>create</servlet-name>
+        <url-pattern>/as</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>rihu</servlet-name>
+        <servlet-class>com.nt.uk</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>rihu</servlet-name>
+        <url-pattern>/riya</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ktm12</servlet-name>
+        <servlet-class>com.nt.AddDeta</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>ktm12</servlet-name>
+        <url-pattern>/ktm</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Login1</servlet-name>
+        <servlet-class>com.nt.Login</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>Login1</servlet-name>
+        <url-pattern>/Log</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>InsertInventoryServlet</servlet-name>
+        <servlet-class>com.nt.InsertInventoryServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>InsertInventoryServlet</servlet-name>
+        <url-pattern>/InsertInventoryServlet</url-pattern>
+    </servlet-mapping>
+
+   <!--  <servlet>
+        <servlet-name>InventoryServlet</servlet-name>
+        <servlet-class>com.nt.InventoryServlet</servlet-class>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>InventoryServlet</servlet-name>
+        <url-pattern>/inventory</url-pattern>
+    </servlet-mapping> -->
+
+ 	<servlet>
+        <servlet-name>InventoryServlet</servlet-name>
+        <servlet-class>com.nt.InventoryServlet</servlet-class>
+    </servlet>
+
+    <!-- Servlet Mapping -->
+    <servlet-mapping>
+        <servlet-name>InventoryServlet</servlet-name>
+        <url-pattern>/inventory</url-pattern>
+    </servlet-mapping>
+    
+     <servlet>
+        <servlet-name>TrackInventoryServlet</servlet-name>
+        <servlet-class>com.nt.TrackInventoryServlet</servlet-class>
+    </servlet>
+
+    <!-- Servlet Mapping -->
+    <servlet-mapping>
+        <servlet-name>TrackInventoryServlet</servlet-name>
+        <url-pattern>/TrackInventoryServlet</url-pattern>
+    </servlet-mapping>
+    
+  <servlet>
+    <servlet-name>DispatchInventoryServlet</servlet-name>
+    <servlet-class>com.nt.DispatchInventoryServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>DispatchInventoryServlet</servlet-name>
+    <url-pattern>/dispatchItem</url-pattern>
+</servlet-mapping>
+
+<servlet>
+    <servlet-name>GenerateReportServlet</servlet-name>
+    <servlet-class>com.nt.GenerateReportServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>GenerateReportServlet</servlet-name>
+    <url-pattern>/report</url-pattern>
+</servlet-mapping>
+
+
+</web-app>
